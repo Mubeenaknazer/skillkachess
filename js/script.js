@@ -25,3 +25,14 @@ sliders.forEach(slider => {
     }, 3000);
 
 });
+function showClassMessage(classType) {
+
+    if (classType === "Online") {
+        alert("Thank you for your interest in our Online Chess Classes!");
+    }
+
+    if (classType === "Offline") {
+        alert("Thank you for your interest in our Offline Chess Classes!");
+    }
+
+}
