@@ -889,3 +889,17 @@ footer {
 .whatsapp-float:hover {
     transform: scale(1.08);
 }
+@media (max-width: 768px) {
+    #hero {
+        height: 100svh;
+        min-height: 600px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+}
