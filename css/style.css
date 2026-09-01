@@ -1002,7 +1002,42 @@ footer {
         scrollbar-width: none;
     }
 }
+
+
+/* Swipe hint - hidden on desktop */
+.gallery-swipe-hint {
+    display: none;
+}
+
+
+/* Mobile Gallery */
 @media (max-width: 768px) {
+
+    .gallery-swipe-hint {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin: -10px 0 15px;
+        font-size: 14px;
+        font-weight: 500;
+        opacity: 0.75;
+    }
+
+    .swipe-arrow {
+        font-size: 20px;
+        animation: swipeArrow 1.2s infinite;
+    }
+
+    @keyframes swipeArrow {
+        0%, 100% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(7px);
+        }
+    }
 
     .gallery-container {
         width: 90%;
@@ -1029,6 +1064,7 @@ footer {
         transform: none;
     }
 }
+
 @media (max-width: 768px) {
 
     .reels-container {
