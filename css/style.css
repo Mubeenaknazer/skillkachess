@@ -843,7 +843,10 @@ footer {
 .class-button:hover {
     background: #444;
 }
-
+.online-demo {
+    color: #F4B400;
+    font-weight: 700;
+}
 
 /* ================================
    MOBILE RESPONSIVE
